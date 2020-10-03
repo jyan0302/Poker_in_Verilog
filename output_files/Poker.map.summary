@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Tue Nov 26 13:45:57 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : Poker
+Top-level Entity Name : Poker
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 498
+Total pins : 96
+Total virtual pins : 0
+Total block memory bits : 3,066,192
+Total DSP Blocks : 5
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1
+Total DLLs : 0
