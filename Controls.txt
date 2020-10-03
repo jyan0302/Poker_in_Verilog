@@ -1,0 +1,36 @@
+
+always @(*) begin
+		if (SW[9]) begin
+		 led0 = tablecard0_data;
+		 led1 = tablecard1_data;
+		 led2 = tablecard2_data;
+		 led3 = tablecard3_data;
+		 led4 = tablecard4_data;
+		 led5 = playercard0_data;
+		 led6 = playercard1_data;
+		 led7 = playercard2_data;
+		 led8 = playercard3_data;
+		 led9 = check_shuffle_data;
+		end
+		
+		else begin
+		led0 = player1_bet_status;
+		led1 = player2_bet_status;
+		led2 = start_game;
+		led3 = deal_player_1_on_data||deal_player_2_on_data||deal_player_3_on_data||deal_player_4_on_data;
+		led4 = deal_1_on_data||deal_2_on_data||deal_3_on_data;
+		led5 = deal_4_on_data;
+		led6 = deal_5_on_data;
+		led7 = invalid_input;
+		led8 = display_winner_data;
+		led9 = start_again;
+		end
+	end
+
+	wire [6:0]bet=SW[6:0];
+	wire clk = CLOCK_50;
+	wire proceed = ~KEY[0];
+	wire check = SW[7];
+	wire raise = SW[8];
+	wire resetn = ~KEY[1];
+
